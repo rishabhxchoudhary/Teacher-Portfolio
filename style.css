@@ -1,0 +1,234 @@
+@import url('http://fonts.cdnfonts.com/css/vogue');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main{
+    height: 100vh;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.child{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    background: rgb(232,237,240);
+    background: linear-gradient(90deg, rgba(232,237,240,1) 0%, rgba(214,215,217,1) 47%, rgba(214,213,213,1) 100%);
+
+    /* border: 1px solid red; */
+}
+
+.sidebar{
+    position: absolute;
+    width: 2%;
+    height: 100vh;
+    right: 0;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Page 1 */
+.page1{
+    height: 100vh;
+    width: 100%;
+}
+
+.page1 .base{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+
+.teacher{
+    position: fixed;
+}
+.teacher img{
+    height: 100vh;
+}
+
+.page1 .base .nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: right;
+}
+.page1 .base .nav ul{
+    transform: translateX(-140px);
+    height: 41px;;
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.page1 .base .nav ul li a{
+    font-weight: thin;
+    font-family: 'Open Sans', sans-serif;
+}
+.page1 .content {
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    width: 100%;
+    height: 70vh;
+}
+.page1 .content .text{
+    height: 60vh;
+    /* border: 1px solid red; */
+    width: 45%;
+}
+.page1 .text .heading {
+    font-family: 'Vogue', sans-serif;
+    font-weight: 400;
+    width: 528px;
+    height: 144px;
+    font-size: 40px;
+    line-height: 72px;
+
+}
+.page1 .text .degination p{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+.page1 .text .degination .school{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.page1 .text .paragraph{
+    width: 500px;
+    font-size: 30px;
+    text-align: justify;
+    font-family: 'Open sans', sans-serif;
+}
+
+.page1 .text .degination hr{
+    margin-top: 20px;
+    width: 50%;
+}
+
+.page2 .content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 200px;
+}
+.page2 .content hr{
+    border-top: 2px solid black;
+    width: 10%;
+    margin: 10px 0;
+}
+
+.page2 .content .heading{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.page2 .content .para{
+    width: 30%;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    line-height: 31px;
+}
+.page2 .content .para p{
+    margin: 10px 0;
+}
+
+.page3 .content{
+    padding-left: 200px;
+    height: 100vh;
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    padding-top: 100px;
+}
+
+.page3 .content .left{
+    margin: 10px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    /* height: 100%; */
+}
+.arrow {
+    width: 96%;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid pink; */
+}
+
+.arrow img{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.page3 .right{
+    padding-top: 50px;
+    height: 50%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.page3 .publication .heading{
+    text-decoration: underline;
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.page3 .publication .about{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.arrow2 {
+    width: 96%;
+    height: 10px;
+    transform: translateY(-100px);
+    display: flex;
+    justify-content: end;
+    /* border: 2px solid pink; */
+}
+
+.arrow2 img{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 2px;
+}

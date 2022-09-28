@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main" class="main">
+        <div class="page1 page child">
+            <div class="sidebar"></div>
+            <div class="base">
+                <div class="teacher" id="teacher">
+                    <img src="./images/teacher-removebg.png" alt="">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="">experience</a></li>
+                        <li><a href="">bio</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="text">
+                        <div class="heading">
+                            <h1>FIRST NAME +</h1>
+                            <h1>LASTNAME</h1>
+                        </div>
+                        <div class="degination">
+                            <p>teacher</p>
+                            <div class="school">
+                                netaji subhas university of tech
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="paragraph">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit beatae neque aut placeat pariatur maiores consequuntur consequatur numquam officiis iusto.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="arrow">
+                    <a href="#page2"><img src="https://img.icons8.com/ios-glyphs/30/000000/long-arrow-down.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="page2" class="page page2 child">
+            <div class="content">
+                <div class="heading">
+                    <p>netaji subhas university of technology</p>
+                </div>
+                <hr>
+
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem beatae illo quibusdam impedit harum, totam doloremque. Quod ab quos dolor libero atque, officiis magnam nihil rem vero modi, sint est?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem beatae illo quibusdam impedit harum, totam doloremque. Quod ab quos dolor libero atque, officiis magnam nihil rem vero modi, sint est?</p>
+                </div>
+            </div>
+            <div class="arrow2">
+                <a href="#page3"><img src="https://img.icons8.com/ios-glyphs/30/000000/long-arrow-down.png"/>
+                </a>
+            </div>
+        </div>
+        <div id="page3" class="page page3 child">
+            <div class="content">
+                <div class="left">
+                    publications
+                </div>
+                <div class="right">
+                    <div class="publication">
+                        <div class="heading">Publication 1:</div>
+                        <div class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,</div>
+                    </div>
+                    <div class="publication">
+                        <div class="heading">Publication 2:</div>
+                        <div class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,</div>
+                    </div>
+                    <div class="publication">
+                        <div class="heading">Publication 3:</div>
+                        <div class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    let teacher = document.getElementById("teacher");
+    let main = document.getElementById("main");
+
+    main.addEventListener('scroll', function(){
+        var value = main.scrollTop;
+        console.log(value);
+        if (value>0 && value<500){
+            teacher.style.transform = `translateX(${-value}px)`;
+        }
+        if (value>734 && value<860){
+            teacher.style.transform = `translateX(${-value*(500/734)}px)`;
+            
+        }
+    })
+    </script>
+</body>
+</html>
