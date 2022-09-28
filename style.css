@@ -1,5 +1,12 @@
-@import url('https://fonts.cdnfonts.com/css/vogue');
+/* @import url('https://fonts.cdnfonts.com/css/vogue'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+@font-face {
+    font-family: 'Vogue';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Vogue'), url('https://fonts.cdnfonts.com/s/16351/Vogue.woff') format('woff');
+}
+
 
 *{
     padding: 0;
